@@ -3,3 +3,17 @@
     width: 300px;
     object-fit: cover;
 }
+.imgCaf {
+    height: 500px;
+    width: 500px;
+    object-fit: cover;
+}
+.nuestrasCaf {
+    display: flex;
+    align-items: center;
+}
+.nuestrasCaf p{
+    text-align: center;
+    
+    
+}
