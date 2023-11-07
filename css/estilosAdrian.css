@@ -4,8 +4,9 @@
     object-fit: cover;
 }
 .imgCaf {
-    height: 500px;
-    width: 500px;
+    height: 400px;
+    width: 400px;
+    margin: 5px 10px 5px 10px;
     object-fit: cover;
 }
 .nuestrasCaf {
