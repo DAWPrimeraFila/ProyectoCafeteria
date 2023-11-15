@@ -1,0 +1,215 @@
+@font-face{
+    font-family: 'Itim';
+    src: url('../font/Itim-Regular.ttf') format('woff2'),
+}
+body{
+    background: radial-gradient(#f59982, #facb97, #f3dcb2);
+    background-color: #F5F0F6;
+    margin: 0;
+    color: #6E7DAB;
+    font-family: Itim;
+}
+header{
+    background-color: #e9b54c67;
+    margin-top: -100px -100px;
+    width: 100%;
+    text-align: center;
+}
+.logo{
+    width: 300px; 
+    height: auto; 
+    border-radius: 200px;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    position:sticky;
+    top: 0; /* Ajusta la posición de inicio del menú pegajoso según tus necesidades */
+    background-color: #E9B44C;
+    border-radius: 20px;
+    margin: 0px;
+    padding: 0px;
+    z-index: 1000; /* Ajusta el valor de z-index para que el menú esté sobre otros elementos */
+   
+    /* Explicacion de porque he puesto sticky
+    relative: El elemento se posiciona de forma relativa con respecto a su posición normal, 
+    pero luego se desplaza según las propiedades top, right, bottom o left. 
+    Si no se especifican estas propiedades, el elemento sigue en su posición normal.
+    fixed: El elemento se posiciona de forma fija con respecto a la ventana del navegador, 
+    lo que significa que permanece en la misma posición incluso al hacer scroll. 
+    Sin embargo, puede causar que el elemento se superponga a otros contenidos.
+    sticky: Este valor combina las características de relative y fixed. 
+    El elemento se comporta como relative respecto a su contenedor cercano 
+    hasta que alcanza un determinado punto al hacer scroll, 
+    momento en el cual se vuelve fixed y se fija en su posición.
+    */
+}
+.logomenu{
+    width: 50px; /* Ajusta el ancho según tus necesidades */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin: 10px; /* Ajusta el margen según tus necesidades */
+    border-radius: 20px;
+}
+.menu >ul{
+    display: flex;
+    flex: 1; /* Hace que el menú ocupe todo el espacio restante */
+    position: relative;
+    justify-content: space-between;
+    margin: 0px;
+    padding: 0px;
+}
+.menu ul li{
+    list-style: none;
+    padding: 0px;
+    white-space: nowrap; /*Esto sirve para que me lo escriba todo en una sola linea*/
+    text-align: center;
+}
+.menu ul li a{
+    text-align: center;
+    text-decoration: none;
+    display:block;
+    padding: 0.5vh 3.5vw;
+    font-size: x-large;
+    border: auto solid transparent;
+}
+.menu>ul>li>a{
+    color: #6E7DAB;
+}
+.menu ul li a:hover{
+    color: #853a79;
+    cursor: pointer;
+    border: 2px white solid;
+    border-radius: 50px;
+}
+.submenu{
+    display:none;
+    position:absolute;
+    padding: 0;
+    margin-left: 5px;
+    border-radius: 50px;
+}
+.submenu li a{
+    color: #6E7DAB;
+}
+.menu ul li:hover .submenu{
+    display: block;
+    background-color: #ffda8f;
+}
+.containerimage{
+    display: flex;
+    justify-content: space-between; /* Distribuye las imágenes a lo largo */
+    align-items: center;
+    text-align: center;
+}
+.image{
+    flex-grow: 1; /* Permite que las imágenes ocupen el espacio disponible */
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+.image img{
+    width: 400px; /* Ajusta el ancho según tus necesidades */
+    height: auto; /* Esto mantiene la proporción de la imagen */
+    border-radius: 12px;
+}
+.barra{
+    background-color: aquamarine;
+    color: #6E7DAB;
+    text-align: center;
+    border: 2px solid #ffffff;
+    border-radius: 12px;
+    padding: 5px;
+    margin: 10px 30px 0px 30px;
+    padding: 10px 10px;
+
+}
+.barrah2{
+    background-color: aquamarine;
+    color: #6E7DAB;
+    text-align: center;
+    border: 2px solid #ffffff;
+    border-radius: 12px;
+    padding: 0,1%;
+    margin: 10px 30px 0px 30px;
+    
+    font-size: 15px;
+
+}
+p{
+    text-align: center;
+}
+footer{
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+.footercontainer{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0px 70px 0px 70px;
+
+}
+footer a{
+    color: #E9B44C; 
+    text-decoration: none;
+}
+footer a:hover{
+    text-decoration:none;
+}
+
+/*Inicio css Adrian */
+.imgAbout {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.imgCaf {
+    height: 400px;
+    width: 400px;
+    margin: 5px 10px 5px 10px;
+    object-fit: cover;
+}
+.nuestrasCaf {
+    display: flex;
+    align-items: center;
+}
+.nuestrasCaf p{
+    text-align: center;
+    
+    
+    
+}
+.estiloCajas{
+    background-color: hsl(218, 30%, 83%);
+    box-shadow: 0 0 5px hsl(218, 30%, 83%);
+    height: min-content;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 10px;
+    
+}
+.h1Nuestras {
+    text-align: center;
+}
+.h2Nuestras{
+    color: #6E7DAB;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    margin-left: 55px;
+}
+
+
+.mainParrafoNuestras{
+    color: #6E7DAB;
+    text-align: center;
+    padding-right: 1rem;
+    font-size: 20px;
+}
