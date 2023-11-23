@@ -217,7 +217,7 @@ footer a:hover{
     width: 30%;
     margin-left: 30%;
     margin-top: -20%;
-    animation: zoom-giro 2s linear infinite;
+    animation: zoom 2s linear infinite;
 }
 .estiloCajasAbout{
     background-color: hsl(218, 30%, 83%);
@@ -279,25 +279,14 @@ footer a:hover{
     }
 }
   
-@keyframes girar {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}
-@keyframes zoom-giro {
+@keyframes zoom {
     0% {
-        transform: rotate(0deg);
         transform: scale(1);
     }
     50% {
-        transform: rotate(180deg);
-        transform: scale(1.2);
+        transform: scale(1.5);
     }
     100% {
-        transform: rotate(360deg);
         transform: scale(1);
     }
   }
