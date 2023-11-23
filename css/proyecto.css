@@ -68,9 +68,9 @@ header{
     text-align: center;
     text-decoration: none;
     display:block;
-    padding: 0.5vh 3.5vw;
+    padding: 3vh 3.5vw;
     font-size: x-large;
-    border: auto solid transparent;
+    border: 2px solid transparent;
 }
 .menu>ul>li>a{
     color: #6E7DAB;
@@ -79,14 +79,14 @@ header{
     color: #853a79;
     cursor: pointer;
     border: 2px white solid;
-    border-radius: 50px;
+    border-radius: 20px;
 }
 .submenu{
     display:none;
     position:absolute;
     padding: 0;
     margin-left: 5px;
-    border-radius: 50px;
+    border-radius: 20px;
 }
 .submenu li a{
     color: #6E7DAB;
@@ -151,6 +151,11 @@ footer{
     margin: 0px 70px 0px 70px;
 
 }
+.footercontainer ul {
+    list-style: none;
+    text-align: left;
+}
+
 footer a{
     color: #E9B44C; 
     text-decoration: none;
