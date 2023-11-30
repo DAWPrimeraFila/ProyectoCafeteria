@@ -54,7 +54,7 @@ header{
     display: flex;
     flex: 1; /* Hace que el menú ocupe todo el espacio restante */
     position: relative;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 0px;
     padding: 0px;
 }
@@ -114,30 +114,32 @@ header{
     border-radius: 12px;
 }
 .barra{
-    background-color: aquamarine;
+    background-color: hsl(218, 30%, 83%);
     color: #6E7DAB;
     text-align: center;
     border: 2px solid #ffffff;
     border-radius: 12px;
-    padding: 5px;
+    padding: 5px 30px 5px 30px;
     margin: 10px 30px 0px 30px;
-    padding: 10px 10px;
+    box-shadow: 0 0 5px hsl(218, 30%, 83%);
+    font-size: 25px;
+    text-justify: distribute;
 
 }
 .barrah2{
-    background-color: aquamarine;
+    background-color: hsl(218, 30%, 83%);
     color: #6E7DAB;
     text-align: center;
     border: 2px solid #ffffff;
     border-radius: 12px;
-    padding: 0,1%;
+    padding: 5px 30px 5px 30px;
     margin: 10px 30px 0px 30px;
-    
-    font-size: 15px;
-
+    font-size: 25px;
+    box-shadow: 0 0 5px hsl(218, 30%, 83%);
 }
-p{
-    text-align: center;
+.pindex{
+    text-justify: distribute;
+    font-size: 17px;
 }
 footer{
     background-color: #333;
@@ -188,6 +190,12 @@ footer a:hover{
 .nuestrasCaf p{
     text-align: center;
 
+
+}
+.primerap{
+    text-align: center;
+
+
 }
 .estiloCajasFlex{
     display: flex;
@@ -199,7 +207,7 @@ footer a:hover{
 .estiloCajas{
     background-color: hsl(218, 30%, 83%);
     box-shadow: 0 0 5px hsl(218, 30%, 83%);
-    height: min-content;
+    height: 50%;
     width: 46%;
     padding: 10px;
     border-radius: 10px;
@@ -235,7 +243,7 @@ footer a:hover{
     padding: 10px;
     border-radius: 10px;
     box-sizing: border-box;
-    
+   
 }
 .h1Nuestras {
     text-align: center;
@@ -246,6 +254,8 @@ footer a:hover{
     margin-bottom: 10px;
     margin-left: 55px;
 }
+
+
 
 
 .mainParrafoNuestras{
@@ -275,6 +285,7 @@ footer a:hover{
     animation: carrusel-anim 10s linear infinite;
     animation-direction: alternate;
 }
+/*Animacion carrusel*/
 @keyframes carrusel-anim {
     0% {
       transform: translateX(0%);
@@ -283,7 +294,7 @@ footer a:hover{
       transform: translateX(-100%);
     }
 }
-  
+ 
 @keyframes zoom {
     0% {
         transform: scale(1);
@@ -295,3 +306,384 @@ footer a:hover{
         transform: scale(1);
     }
   }
+
+  /*Inicio css DAMARIS */
+
+.headdama {
+    width: 100%;
+    background-color: #e9b54c67;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    margin: 0px 10px 3px 0px;
+    font-size: 30px; 
+    background-color: #e9b54c67;
+    width: 100%;
+    text-align: center; 
+}
+.nombrepaginacontacto {
+    background-color: hsl(218, 30%, 83%);
+    color: #6E7DAB;
+    text-align: center;
+    border: 2px solid #ffffff;
+    border-radius: 12px;
+    padding: 5px;
+    margin: 30px 10px;
+    box-shadow: 0 0 5px hsl(218, 30%, 83%);
+    font-size: 25px;
+    }
+    
+    .partecontenedorcontacto {
+      display:flex; 
+      align-items: center; 
+    }
+    .primerparrafo {
+      flex: 1;
+      padding: 30px;
+      text-align: center;
+    }
+  
+    .primerparrafo p {
+      margin-bottom: 50px;
+      font-size: 25px;
+    }
+  
+    .primerparrafo h2 {
+      margin-bottom: 50px;
+      font-size: 40px;
+    }
+  
+    /* Formulario de contacto */
+    
+    .formulario {
+      display: flex; 
+      flex-direction: column;
+      align-items: center;
+      text-align: center; 
+      width: 50%;
+      padding: 15px 10px 15px;
+      background-color: #6e7dab;
+      color: #fff;
+      border-radius: 10px;
+      margin: 50px 10px 30px 40px;
+      font-size: 20px;
+    }
+  
+    .formulario h2 {
+      text-align: center;
+    }
+  
+    .nombreformulario{
+      width: 250px;
+      height:30px; 
+      margin:  0px 0px 0px 22px;
+    }
+    .apellidoformulario{
+      width: 250px;
+      height:30px; 
+      margin:  0px 0px 0px 22px;
+    }
+    .emailformulario{
+      width: 250px;
+      height:30px; 
+      margin:  0px 0px 0px 44px;
+    }
+    .telefonoformulario{
+      width: 250px;
+      height:30px; 
+      margin:  0px 0px 0px 22px;
+    }
+    .asuntoformulario{
+      width: 250px;
+      height:30px; 
+      margin:  0px 0px 0px 37px;
+    }
+    
+    .comentarios{
+      display: block;
+      padding-bottom: 20px;
+      text-align: left;
+    }
+    .comentarioformulario{
+      resize: none;
+      width: 100%;
+      height:200px; 
+      margin:  0px;
+    }
+  
+    .boton1{
+      width: 80px;
+      height: 45px;
+      font-size: 20px;
+      color: #fff;
+      background-color: #42213d;
+      margin: 0 10px;
+      cursor: pointer;
+    }
+  
+    .boton2{
+      width: 80px;
+      height: 45px;
+      font-size: 20px;
+      color: #fff;
+      background-color: #42213d;
+      margin: 0 10px;
+      cursor: pointer;
+    }
+  
+     /* Redes sociales */
+    .redes-sociales {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    
+    .boton-social {
+      height: 30%;
+      width: 30%;
+      display: inline-block;
+      margin: 0 5px;
+      padding: 8px;
+      font-size: 18px;
+      color: #fff;
+      border-radius: 0%;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+      background-size: contain;
+      cursor: pointer;
+      text-align: center;
+    }
+    
+  .redes-sociales img {
+    height: 40%;
+    width: 40%;
+    border-radius: 50px;
+    box-sizing: border-box;
+    margin: 0;
+  }
+  
+  .redes-sociales img:hover{
+    border:3px solid #42213d;
+    border-radius: 50px;
+    box-sizing: border-box;
+  }
+  
+  .visitanosh2{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 5%;
+  }
+  
+  .contenedordamaparteabajo{
+    display: flex;
+    flex-direction: row; /* Alinear los elementos en fila (horizontal) */
+    justify-content: space-between; /* Distribuir el espacio entre los elementos */
+    align-items: center;
+    padding-right: 5%;
+    padding-bottom: 5%;
+  }
+  /*mapa*/
+iframe {
+    border: 1px solid black;
+    width: 40%;
+    height: 70vh; 
+    box-sizing: border-box;
+    padding-left: 5%;
+  }
+  
+  /*bloque en el centro de la pantalla horizontalmente*/
+.containerimagenesdamacarrusel {
+  width: 50%;
+  overflow: hidden;
+}
+
+/*Aplico flex para que todas las fotos estan en la misma li­nea horizontalmente*/
+.imagenescafeteriadama {
+  display: flex;
+  animation: carrusel-animdama 10s linear infinite;
+}
+
+.imagenescafeteriadama img{
+  height: 55vh;
+  margin-left: 35px;
+}
+
+/*Animacion carrusel*/
+@keyframes carrusel-animdama {
+  0% {
+    transform: translateX(0%);
+  }
+  25% {
+    transform: translateX(-50%);
+  }
+  50% {
+    transform: translateX(-100%);
+  }
+  75% {
+    transform: translateX(-50%)
+  }
+  100% {
+    transform: translateX(0%)
+  }
+}
+  /*telefono*/
+
+.llamanosh2{
+    text-align: center;
+    font-size: 40px;
+  }
+  
+  .enlacetelefono {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+  }
+  
+  .enlacetelefono img {
+    max-width: 150px;
+    box-sizing: border-box;
+    padding-bottom: 30%;
+  }
+
+  /*CSS ELENA CARTA*/
+  /*Estilos básicos para el body: color de letra, imagen de fondo y fuente.*/
+.carta {
+    color: #42213d;
+    font-family: Itim;
+    background-image: url("../img/fondopagweb.jpeg");
+}
+
+/*Estilos para el h1. Para que el fondo no se alargase a todo lo ancho de la página,
+le dimos un tamaño y tuvimos que posicionarlo a mano. También le asignamos un color de letra,
+un estilo de letra, padding y un borde redondeado. El color de fondo está en hsla en vez
+de en hex porque este formato facilita modificar la intensidad del color y la opacidad.*/
+.carta h1 {
+    position: relative;
+    left: 41%;
+    width: 15vw;
+    color: #42213d;
+    font-weight: bolder;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 20px;
+    background-color: hsla(218, 30%, 83%, 0.85);
+}
+
+.carta h2 {
+    text-align: center;
+}
+
+/*Estilos para las secciones de la carta. Le hemos dado anchura y posicionamiento para que 
+ocupe el espacio central sin que el fondo se alargue a los lados. Hemos usado los formatos
+de color hsla y hsl para modificar más fácilmente la opacidad y la intensidad de color. Le hemos
+creado un borde difuso para que choque menos con el fondo.*/
+.carta section {
+    position: relative;
+    left: 30%;
+    width: 35%;
+    background-color: hsla(219, 30%, 83%, 0.85);
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0 0 5px hsl(218, 30%, 83%);
+}
+
+/*Estilos para la tabla de la carta*/
+table {
+    width: 100%;
+    margin: 20px 0px;
+}
+
+th {
+    padding: 10px;
+}
+
+/*El borde inferior (línea de puntos) sirve para hacer más sencilla la lectura del menú*/
+tbody td {
+    padding: 5px;
+    border-bottom: 1px dotted #42213d;
+}
+
+/*"ingredientes" es la clase del párrafo dentro del <details>, que contiene los ingredientes
+de algunos de los elementos de la carta.*/
+.ingredientes {
+    font-size: 0.85em;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    width: 17em;
+}
+
+/*Define el estilo de los encabezados de las tablas*/
+.theaders {
+    border-radius: 8px;
+    background-color: hsl(309, 33%, 59%);
+    padding: 0.3rem;
+}
+
+tfoot {
+    font-size: 0.8rem;
+}
+
+/*Estilos para el formulario de encargos.
+El formulario necesita posición relative para poder colocar los demás respecto a él*/
+.carta form {
+    position: relative;
+}
+
+.carta fieldset {
+    margin-bottom: 1.5rem;
+}
+
+.carta fieldset legend {
+    font-size: 1.5rem;
+}
+
+.carta input[type=checkbox] {
+    margin: 0.5rem;
+}
+
+/*Los números y los select se colocan a la derecha para que se vea mejor*/
+.carta input[type=number] {
+    position: absolute;
+    left: 55%;
+}
+
+.carta select {
+    position: absolute;
+    left: 60%;
+}
+
+.carta input[type=text] {
+    margin: 0.5rem;
+}
+
+.carta input[type=date] {
+    margin: 0.5rem;
+}
+
+/*Estilos para que los botones encajen en la estética del resto de los elementos*/
+.carta button {
+    font-size: 1rem;
+    font-weight: bolder;
+    color: #42213d;
+    background-color: #6E7DAB;
+    border-radius: 5px;
+    margin-right: 1rem;
+}
+
+/*hover para los botones*/
+.carta button:hover {
+    font-weight: bolder;
+    color: #6E7DAB;
+    background-color: #42213d;
+}
+
+/*Video del Index*/
+.video-container {
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center; 
+}
